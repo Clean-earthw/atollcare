@@ -11,14 +11,6 @@ number in the demo is illustrative.
 Built at OxHack 2026 (theme: **Time**). Every minute the receiving team knows a patient is coming is a minute of
 preparation instead of a cold start at the door.
 
-## Built with
-
-| Sponsor | What it does here | Where |
-|---|---|---|
-| **Presage SmartSpectra** | Contactless heart rate, breathing rate, waveforms and framing hints from a phone or laptop camera, live or from an uploaded clip. Presage's own stability verdict decides what gets scored | `presage-bridge/`, `web/src/lib/presage.ts`, `engine/app/intake/rppg_extractor.py` |
-| **Google Gemini** | Visible-sign check on video frames (each finding cites the frame it was seen in), ID photo read, speech to text, live SBAR handoff, and drug/dose extraction from spoken notes, with a fallback model and rule-based fallbacks | `engine/app/intake/`, `engine/app/adapters/gemini.py` |
-| **ElevenLabs** | Scribe speech to text for crew notes; hospital questions and alerts spoken aloud in the vehicle | `engine/app/adapters/elevenlabs.py`, `web/src/lib/{dictation,speech}.ts` |
-| **Tiger Data (Tiger Cloud)** | Vitals and timeline as hypertables, three continuous aggregates (1-minute trend, network hourly vitals, daily events), compression after 7 days, and a live aggregate-vs-raw benchmark on `/insights` | `engine/app/migrations/`, `engine/app/db.py`, `web/src/app/(main)/insights/` |
 
 ## What it does
 
